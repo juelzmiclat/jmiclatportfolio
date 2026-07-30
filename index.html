@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Juelz Miclat's data science and geospatial portfolio, featuring work completed with the HDMA Center at SDSU.">
+  <title>Juelz Miclat | Data & Geospatial Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://js.arcgis.com/5.1/embeddable-components/"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Juelz Miclat home">
+        <span class="brand-mark">JM</span>
+        <span>Juelz Miclat</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#final-project">Final Project</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Portfolio · 2026</p>
+        <h1><span>Juelz</span> Miclat</h1>
+        <p class="hero-role">Data Science &amp; GIS Student</p>
+        <p class="hero-text">I’m Juelz Miclat, an aspiring SDSU student building practical experience with mapping, Python, data visualization, text analysis, Tableau, and StoryMaps through my internship with the HDMA Center at San Diego State University.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">View portfolio</a>
+          <a class="button secondary" href="resume.html">View resume</a>
+        </div>
+      </div>
+      <aside class="hero-panel reveal" aria-label="Portfolio highlights">
+        <span class="orbit orbit-one"></span>
+        <span class="orbit orbit-two"></span>
+        <div class="stat-card">
+          <strong>HDMA</strong>
+          <span>SDSU internship experience</span>
+        </div>
+        <div class="stat-card offset">
+          <strong>Fall 2027</strong>
+          <span>next academic chapter</span>
+        </div>
+        <div class="tool-cloud" aria-label="Tools and topics">
+          <span>Python</span><span>ArcGIS</span><span>Tableau</span><span>StoryMaps</span><span>Text Analysis</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="about section shell" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About me</p>
+        <h2>Curious by default, analytical by practice.</h2>
+      </div>
+      <div class="about-grid reveal">
+        <p>My internship work at the HDMA Center has helped me become acquainted with the software, workflows, and communication skills used across the data science field. Each project below represents a step in learning how to collect, analyze, visualize, and explain information clearly.</p>
+        <p>I currently attend Southwestern College and plan to enroll at San Diego State University for the Fall 2027 semester. I am especially interested in projects that connect data, geography, public health, and community impact.</p>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Project gallery</p>
+          <h2>Exercises, experiments, and growing technical range.</h2>
+          <p>Browse the gallery, open a project, and inspect the details behind each exercise.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <button class="project-preview image-preview" data-modal="wordcloud-one" aria-label="Open Text Analysis Word Cloud project">
+              <img src="assets/images/wordcloud.png" alt="Colorful word cloud featuring terms such as dataset, information, analyze, large, and variety">
+            </button>
+            <div class="project-body">
+              <div class="project-meta"><span>Python</span><span>Text analysis</span></div>
+              <h3>Term Frequency Word Cloud</h3>
+              <p>A visual summary of recurring vocabulary generated through Python-based text analysis and term-frequency processing.</p>
+              <button class="text-link" data-modal="wordcloud-one">View project <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <button class="project-preview image-preview" data-modal="wordcloud-two" aria-label="Open Alternate Word Cloud project">
+              <img src="assets/images/wordcloud-v2.png" alt="Second colorful word cloud with data science terms arranged at different scales">
+            </button>
+            <div class="project-body">
+              <div class="project-meta"><span>Python</span><span>Visualization</span></div>
+              <h3>Alternate Word Cloud Study</h3>
+              <p>A second rendering of the same text-analysis workflow, used to compare composition, emphasis, and readability.</p>
+              <button class="text-link" data-modal="wordcloud-two">View project <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <button class="project-preview image-preview" data-modal="lung-cancer" aria-label="Open Lung Cancer Analysis project">
+              <img src="assets/images/lung-cancer-analysis.png" alt="Bar chart comparing mean age-adjusted lung cancer rates across San Diego regions">
+            </button>
+            <div class="project-body">
+              <div class="project-meta"><span>Python</span><span>Public health</span></div>
+              <h3>Lung Cancer Regional Analysis</h3>
+              <p>A visual comparison of mean age-adjusted lung cancer rates across regions in San Diego County.</p>
+              <button class="text-link" data-modal="lung-cancer">View project <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <button class="project-preview map-preview" data-modal="arcgis-map" aria-label="Open ArcGIS Online Map project">
+              <div class="map-art" aria-hidden="true">
+                <span class="map-line line-one"></span><span class="map-line line-two"></span><span class="map-line line-three"></span>
+                <span class="map-pin pin-one"></span><span class="map-pin pin-two"></span><span class="map-pin pin-three"></span>
+              </div>
+            </button>
+            <div class="project-body">
+              <div class="project-meta"><span>ArcGIS Online</span><span>Web mapping</span></div>
+              <h3>Interactive ArcGIS Map</h3>
+              <p>An embedded online map demonstrating web cartography, spatial navigation, and interactive geographic presentation.</p>
+              <button class="text-link" data-modal="arcgis-map">Open map <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="project-card placeholder-card reveal">
+            <div class="project-preview placeholder-preview">
+              <div><span class="placeholder-icon">▥</span><strong>Tableau embed coming soon</strong></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>Tableau</span><span>Dashboard</span></div>
+              <h3>Interactive Tableau Exercise</h3>
+              <p>This space is ready for a future Tableau Public embed and accompanying project description.</p>
+              <span class="status-label">In progress</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell final-project" id="final-project">
+      <div class="final-project-inner reveal">
+        <div class="final-copy">
+          <p class="eyebrow">Capstone showcase</p>
+          <h2>Final StoryMaps Project</h2>
+          <p>This large feature area is reserved for the internship final project. It can later hold an ArcGIS StoryMaps embed, project overview, research question, methods, findings, and reflections.</p>
+          <span class="status-label light">Coming later</span>
+        </div>
+        <div class="story-placeholder" aria-label="Placeholder for final ArcGIS StoryMaps project">
+          <div class="story-window">
+            <div class="story-toolbar"><i></i><i></i><i></i></div>
+            <div class="story-layout">
+              <div class="story-text-lines"><span></span><span></span><span></span><span></span></div>
+              <div class="story-map-shape"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta shell reveal">
+      <div>
+        <p class="eyebrow">Next chapter</p>
+        <h2>Building toward SDSU, one project at a time.</h2>
+      </div>
+      <a class="button primary" href="resume.html">See experience & skills</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>© <span id="year"></span> Juelz Miclat</p>
+      <p>Data, maps, and ideas in motion.</p>
+    </div>
+  </footer>
+
+  <dialog class="project-modal" id="wordcloud-one">
+    <button class="modal-close" aria-label="Close dialog">×</button>
+    <div class="modal-grid">
+      <img src="assets/images/wordcloud.png" alt="Colorful term-frequency word cloud">
+      <div><p class="eyebrow">Python · Text analysis</p><h2>Term Frequency Word Cloud</h2><p>This exercise uses text analysis and term frequencies in Python to surface the most prominent language in a source text. Larger words represent terms with greater frequency.</p></div>
+    </div>
+  </dialog>
+
+  <dialog class="project-modal" id="wordcloud-two">
+    <button class="modal-close" aria-label="Close dialog">×</button>
+    <div class="modal-grid">
+      <img src="assets/images/wordcloud-v2.png" alt="Alternate colorful term-frequency word cloud">
+      <div><p class="eyebrow">Python · Visualization</p><h2>Alternate Word Cloud Study</h2><p>This companion visualization provides a second composition for reviewing prominent terms and evaluating how layout choices affect visual interpretation.</p></div>
+    </div>
+  </dialog>
+
+  <dialog class="project-modal" id="lung-cancer">
+    <button class="modal-close" aria-label="Close dialog">×</button>
+    <div class="modal-grid">
+      <img src="assets/images/lung-cancer-analysis.png" alt="Bar chart of lung cancer rates by San Diego region">
+      <div><p class="eyebrow">Python · Data visualization</p><h2>Lung Cancer Regional Analysis</h2><p>This chart compares the mean age-adjusted lung cancer rate across San Diego County regions, translating a health dataset into a clear regional comparison.</p></div>
+    </div>
+  </dialog>
+
+  <dialog class="project-modal map-modal" id="arcgis-map">
+    <button class="modal-close" aria-label="Close dialog">×</button>
+    <div class="modal-heading"><p class="eyebrow">ArcGIS Online · Interactive map</p><h2>Web Mapping Exercise</h2><p>Use the map controls to pan, zoom, and explore the published ArcGIS Online item.</p></div>
+    <arcgis-embedded-map style="height:600px;width:100%;" item-id="eba0daab48e84eb1bcae110f6fc067c6" theme="light" time-zone-label-enabled center="-117.16740772145559,32.702849624814036" scale="144447.638572" portal-url="https://sdsugeo.maps.arcgis.com"></arcgis-embedded-map>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
